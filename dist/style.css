@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-bg-color: brown;
+}
+.header {
+  background-color: var(--main-bg-color);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-nav {
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  margin: 2rem;
+}
+
+.images {
+  height: 600px;
+}
+
+.active {
+  color: green;
+}
