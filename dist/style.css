@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda:wght@400;700&family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +8,19 @@
 :root {
   --main-bg-color: brown;
 }
+body {
+  background-image: url(images/mediterreanaen-background.jpg);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
 .header {
   background-color: var(--main-bg-color);
   color: white;
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .nav {
@@ -19,14 +28,22 @@
   gap: 1rem;
 }
 
+.logo {
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .button-nav {
   padding: 0.5rem;
   border: none;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
   margin: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .images {
@@ -35,4 +52,25 @@
 
 .active {
   color: green;
+}
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}
+.homeLeft {
+  margin: auto 0;
+}
+.homeLeft h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 7rem;
+  color: var(--main-bg-color);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* Footer height */
 }

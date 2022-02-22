@@ -6,7 +6,13 @@ function createHeader() {
     const header = document.createElement('header')
     header.classList.add('header')
     const titleLogo = document.createElement('h1')
+    titleLogo.classList.add('logo')
     titleLogo.textContent = 'mediterranean restaurant'
+    titleLogo.addEventListener('click', () => {
+        const home = document.getElementById('home')
+        setActiveButton(home)
+        loadHome()
+    })
 
     header.appendChild(titleLogo)
     header.appendChild(createNav())
@@ -26,9 +32,9 @@ function createNav() {
         loadMenu()
     })
 
-
     const home = document.createElement('button')
     home.classList.add('button-nav')
+    home.setAttribute('id', 'home')
     home.textContent = 'Home'
     home.addEventListener('click', () => {
         setActiveButton(home)
@@ -59,7 +65,6 @@ function setActiveButton(button) {
             button.classList.remove("active");
         }
     });
-
     button.classList.add("active");
 }
 
@@ -74,13 +79,10 @@ function createFooter() {
     const footer = document.createElement('footer')
     const copy = document.createElement('p')
     copy.textContent = 'Made by Yusuf Karakaya'
-
     footer.appendChild(copy)
 
     return footer
 }
-
-
 
 function initializeWebsite() {
     const content = document.getElementById('content')
@@ -89,7 +91,7 @@ function initializeWebsite() {
     content.appendChild(createMain());
     content.appendChild(createFooter());
 
-    // setActiveButton(document.querySelector(".button-nav"));
+    setActiveButton(document.querySelector(".button-nav"));
 
     loadHome()
 }

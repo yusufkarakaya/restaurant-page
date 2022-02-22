@@ -1,14 +1,22 @@
-
-
 function createHome() {
 
     const home = document.createElement('div')
-    const homeImage = document.createElement('img')
-    homeImage.classList.add('images')
-    homeImage.src = 'images/home-image.jpg'
-    homeImage.alt = 'meditarranean food'
+    home.classList.add('home')
+    const homeLeft = document.createElement('div')
+    const homeRight = document.createElement('div')
+    homeLeft.classList.add('homeLeft')
+    homeRight.classList.add('homeRight')
 
-    home.appendChild(homeImage)
+    const title = document.createElement('h1')
+    title.innerHTML = "Make your next meal " + '</br>' + "A memorable one"
+    const description = document.createElement('p')
+    description.textContent = "Dummy content description"
+
+    homeLeft.appendChild(title)
+    homeLeft.appendChild(description)
+    home.appendChild(homeLeft)
+    home.appendChild(homeRight)
+
     return home
 }
 
