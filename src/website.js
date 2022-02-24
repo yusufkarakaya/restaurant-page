@@ -7,7 +7,7 @@ function createHeader() {
     header.classList.add('header')
     const titleLogo = document.createElement('h1')
     titleLogo.classList.add('logo')
-    titleLogo.textContent = 'mediterranean restaurant'
+    titleLogo.textContent = "Musa's Kitchen"
     titleLogo.addEventListener('click', () => {
         const home = document.getElementById('home')
         setActiveButton(home)

@@ -10,7 +10,8 @@ function createHome() {
     const title = document.createElement('h1')
     title.innerHTML = "Make your next meal " + '</br>' + "A memorable one"
     const description = document.createElement('p')
-    description.textContent = "Dummy content description"
+    description.textContent = "Our Mediterranean influenced kitchen gains inspiration from the best cuisine the Levant has to offer"
+
 
     homeLeft.appendChild(title)
     homeLeft.appendChild(description)

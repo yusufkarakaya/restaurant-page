@@ -42,7 +42,7 @@ h1 {
 }
 
 .main {
-  margin: 2rem;
+  margin: 4rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -51,7 +51,7 @@ h1 {
 }
 
 .active {
-  color: green;
+  color: var(--main-bg-color);
 }
 
 .home {
@@ -72,5 +72,44 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem; /* Footer height */
+  height: 2.5rem;
+  text-align: center;
+}
+
+.menu-img {
+  height: 12rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition-delay: 2s;
+}
+.menu-img:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition-delay: 2s;
+}
+
+ul {
+  margin: auto;
+  width: 550px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+li {
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 30px;
+}
+
+.adress {
+  font-size: 1.5rem;
+}
+
+.contact {
+  text-align: center;
+}
+.homeLeft p {
+  font-size: 1.2rem;
 }
