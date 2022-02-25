@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda:wght@400;700&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-bg-color: brown;
+}
+body {
+  background-image: url(images/mediterreanaen-background.jpg);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header {
+  background-color: var(--main-bg-color);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-nav {
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  margin: 4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.images {
+  height: 600px;
+}
+
+.active {
+  color: var(--main-bg-color);
+}
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+}
+.homeLeft {
+  margin: auto 0;
+}
+.homeLeft h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 7rem;
+  color: var(--main-bg-color);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+}
+
+.menu-img {
+  height: 12rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition-delay: 2s;
+}
+.menu-img:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition-delay: 2s;
+}
+
+ul {
+  margin: auto;
+  width: 550px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+li {
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 30px;
+}
+
+.adress {
+  font-size: 1.5rem;
+}
+
+.contact {
+  text-align: center;
+}
+.homeLeft p {
+  font-size: 1.2rem;
+}
